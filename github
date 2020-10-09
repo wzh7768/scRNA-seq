@@ -1,0 +1,15 @@
+#!/bin/bash
+#以文件ａ为例(可以是文件夹)
+mv ~/a /home/wzh/wzh_git
+git add a
+git commit -m "*"
+git push origin 
+#如果需要更改推送仓库
+git remote add origin git@github.com:wzh7768/scRNA-seq.git #(仓库可修改)
+#如果是新的仓库
+git push --set-upstream origin master
+git push origin
+
+
+
+
